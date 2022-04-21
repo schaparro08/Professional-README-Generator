@@ -8,8 +8,10 @@ const generateReadMe = ({ username, name1, email, project, description, image, l
 `# ${project}
 ## Description
 
-###${description}
-###${image}
+### ${description}
+
+### ${image}
+
 ## project location ##
 
 > [repo link](${repoLink})
@@ -28,9 +30,10 @@ const generateReadMe = ({ username, name1, email, project, description, image, l
 
 >Contact
 
-##licenses 
+## licenses 
 
 ${generateMarkdown.renderLicenseBadge(license)}
+
 ## Installation
 Commands needed to install dependancies: 
 ${commands}
