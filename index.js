@@ -7,6 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const generateReadMe = ({ username, name1, email, project, description, image, licenses, commands, tests, repo, repoLink, live }) =>
 `# ${project}
 ## Description
+
 ###${description}
 ###${image}
 ## project location ##
@@ -21,7 +22,7 @@ const generateReadMe = ({ username, name1, email, project, description, image, l
 
 >Project Location
 
-> Licenses
+>Licenses
 
 >Installation
 
@@ -87,7 +88,7 @@ inquirer
         type: 'checkbox',
         message: 'What kind of license does your project have?',
         name: 'licenses',
-        choices:[]
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         
       },
       {
