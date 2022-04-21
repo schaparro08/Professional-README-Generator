@@ -10,7 +10,7 @@ const generateReadMe = ({ username, name1, email, project, description, image, l
 
 ### ${description}
 
-> ![See Video] (${image})
+> [See Video] (${image})
 
 ## Location
 

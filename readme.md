@@ -3,7 +3,7 @@
 
 ### The Professional ReadMe.md Generator uses Node.js and Inquirer in order to prompt the user with questions that will then be used to fill out the ReadMe.md file. The file will then be created locally upon successful completion of the prompts.
 
-> ![See Video] (https://drive.google.com/file/d/1XRigulg8veNYjF5xImmgRYhYtdWQg_8H/view)
+> [Video Link](https://drive.google.com/file/d/1XRigulg8veNYjF5xImmgRYhYtdWQg_8H/view)
 
 ## Location
 
