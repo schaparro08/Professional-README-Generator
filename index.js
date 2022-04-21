@@ -12,23 +12,23 @@ const generateReadMe = ({ username, name1, email, project, description, image, l
 
 ### ${image}
 
-## project location ##
+## Location
 
 > [repo link](${repoLink})
 
 > [live link](${live}) 
 
-# Table of contents
+# Table of contents 
 
-> Description
+1. [Description](#description)
 
->Project Location
+2. [Location](#location)
 
->Licenses
+3. [Licenses](#licenses)
 
->Installation
+4. [Installation](#installation)
 
->Contact
+5. [Questions](#questions)
 
 ## licenses 
 
@@ -41,7 +41,7 @@ Commands needed to run tests:
 ${tests}
 Additonal instructions:
 ${repo}
-## Contact
+## Questions
  ### ${name1}
 ### ${email}
 
