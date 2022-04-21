@@ -4,7 +4,7 @@ const path = require('path');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
 
-const generateReadMe = ({ username, name1, email, project, description, image, licenses, commands, tests, repo, repoLink, live }) =>
+const generateReadMe = ({ username, name1, email, project, description, image, license, commands, tests, repo, repoLink, live }) =>
 `# ${project}
 ## Description
 
@@ -28,8 +28,9 @@ const generateReadMe = ({ username, name1, email, project, description, image, l
 
 >Contact
 
-##licenses
-${licenses}
+##licenses 
+
+${generateMarkdown.renderLicenseBadge(license)}
 ## Installation
 Commands needed to install dependancies: 
 ${commands}
@@ -87,7 +88,7 @@ inquirer
       {
         type: 'checkbox',
         message: 'What kind of license does your project have?',
-        name: 'licenses',
+        name: 'license',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         
       },

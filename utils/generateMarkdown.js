@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
-    return `[License]($(license))`
+    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   }
   return '';
 }
@@ -27,3 +27,6 @@ function renderLicenseSection(license) {
 
 
 
+module.exports = {
+  renderLicenseBadge 
+}
